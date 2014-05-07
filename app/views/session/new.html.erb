@@ -1,0 +1,12 @@
+<h1>Login</h1>
+
+<%= form_tag new_session_path do -%>
+
+    <labe for="login">Login</labe>
+    <%= text_field_tag :login, params[:login]%>
+    <labe for="password">Password</labe>
+    <%= text_field_tag :password, params[:password]%>
+
+    <%= submit_tag "Login" %>
+
+<% end %>
