@@ -5,7 +5,7 @@ class SessionController < ApplicationController
 
 
   def create
-    binding.pry
+
     @user = User.authentication(params[:login], params[:password])
 
     if @user
