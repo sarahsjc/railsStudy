@@ -14,7 +14,7 @@ class SessionController < ApplicationController
       redirect_to posts_path
     else
       flash[:notice] = "Wrong password"
-      redirect_to_ new_session_path
+      redirect_to new_session_path
     end
   end
 
